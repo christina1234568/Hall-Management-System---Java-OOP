@@ -45,14 +45,6 @@ I implemented the **Manager features**, which included:
 
 ---
 
-## Installation & Usage
-1. Clone or download the repository.  
-2. Open the project in your Java IDE (NetBeans recommended).  
-3. Compile and run the main class.  
-4. Log in as different user roles to explore the features.
-
----
-
 ## Team Members & Roles
 - Member 1: Scheduler Features  
 - Member 2: Customer Features  
