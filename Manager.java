@@ -8,11 +8,6 @@ package assignment;
 public class Manager extends User{
 
     
-    public static void main(String[] args) {
-        
-        
-        
-    }
-    
 }
+
 
