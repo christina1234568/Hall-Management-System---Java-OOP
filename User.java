@@ -50,7 +50,9 @@ public abstract class User {
         this.name = name;
     }
     
-    
+   public User(){
+        
+    } 
 
     public String getId() {
         return id;
@@ -248,3 +250,4 @@ public abstract class User {
     
 
 }
+
