@@ -10,6 +10,7 @@ Four user roles are supported:
 - **Customer:** Registers, books halls, views bookings, and raises issues.
 - **Administrator:** Manages staff and user accounts, oversees bookings.
 - **Manager (My Role):** Oversees sales, resolves customer issues, and manages projects.
+- **Note:** This repository contains the **Manager role features only**. Other team members implemented Scheduler, Customer, and Administrator features in the original project.
 
 ---
 
