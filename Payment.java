@@ -88,43 +88,5 @@ public class Payment {
 }
 
 
-/*public class Payment {
-    //paymentID, bookingID, totalAmount, paymentDate
-    private String payemntID;
-    private Date paymentDate;
-    private double amount;
-    private String BookingID;
 
-    
 
-    public Payment(String payemntID, Date paymentDate, double amount, String BookingID) {
-        this.payemntID = payemntID;
-        this.paymentDate = paymentDate;
-        this.amount = amount;
-        this.BookingID = BookingID;
-    }
-    
-
-    public String getPayemntID() {
-        return payemntID;
-    }
-
-    public Date getPaymentDate() {
-        return paymentDate;
-    }
-
-    public double getAmount() {
-        return amount;
-    }
-    
-
-    
-
-    public Payment() {
-    }
-    
-    
-    
-   
-        
-}*/
