@@ -182,65 +182,7 @@ public class FileOperations{
     }
     
 
-    /*public String modify(String fileName, int position, String oldValue, String newValue) {
-        String status = "";
-
-        try {
-            File file = new File(fileName);
-            
-
-            // Check if the original file exists
-            if (!file.exists()) {
-                return "Original file does not exist.";
-            }
-
-            // Create FileReader and BufferedReader to read from the original file
-            FileReader reader = new FileReader(file);
-            BufferedReader bReader = new BufferedReader(reader);
-
-            // Create a temporary file to write the updated contents
-            File tempFile = new File("TemporaryFile.txt");
-            PrintWriter print = new PrintWriter(tempFile);
-
-            String line = bReader.readLine();
-
-            // Read lines from the original file
-            while (line != null) {
-                String[] parts = line.split(";");
-
-                // Check if the current line contains the old value at the specified position
-                if (parts.length > position && parts[position].equals(oldValue)) {
-                    // Update the value at the specified position
-                    parts[position] = newValue;
-
-                }
-
-                // Join the parts array into a single line with ';' delimiter
-                line = String.join(";", parts);
-                // Write the (possibly updated) line to the temp file
-                print.println(line);
-                // Read the next line
-                line = bReader.readLine();
-            }
-
-            // Close the readers
-            bReader.close();
-            print.close();
-
-            // Replace the original file with the updated temp file
-            if (!file.delete()) {
-                status = "Error encountered while deleting old file.";
-            } else if (!tempFile.renameTo(file)) {
-                status = "Error encountered while renaming new file.";
-            } else {
-                status = "Record updated successfully.";
-            }
-        } 
-        catch (IOException e) {
-            status = e.getMessage();
-        }
-        return status;
-    }*/
+    
     
     public ArrayList<Casting> searchRecord(String fileName, String ID, int position) {
         ArrayList<Casting> matches = new ArrayList<>();
@@ -264,52 +206,6 @@ public class FileOperations{
         return matches;
         // Can be used for validation purposes as well (just check the length of the returned ArrayList)
     }
-    //pascal original
-    /*public ArrayList<String> searchRecord(String fileName, String ID, int position) {
-        ArrayList<String> matches = new ArrayList<>();
-
-        // try with resources is used to automatically close the buffer reader
-        try (BufferedReader bReader = new BufferedReader(new FileReader(new File(fileName)))) {
-            String line;
-            while ((line = bReader.readLine()) != null) {
-                String[] parts = line.split(";"); // The data saved in the text file will be separated using semi colon
-                // Checking if the current line contains the ID in the given position
-                if (parts.length > position && parts[position].equals(ID)) {
-                    matches.add(line); // Adding the lines containing the data being searched in the arraylist 
-                }
-            }
-        } catch (IOException e) {
-            System.out.println("Error encountered: " + e.getMessage());
-            
-        }
-
-        return matches;
-        // Can be used for validation purposes as well ( Just check the length of the returnd arraylist)
-    }*/
     
-    
-    /*public Boolean searchRecord(String fileName, String ID, int position) {
-        Boolean result = false;
-
-        // useing try with resources to automatically close the filereader and buffer readerr
-        try (BufferedReader bReader = new BufferedReader(new FileReader(new File(fileName)))) {
-            String line;
-            while ((line = bReader.readLine()) != null) {
-                String[] parts = line.split(";");
-                // Check if the current line contains the ID in the given position
-                if (parts.length > position && parts[position].equals(ID)) {
-                    result = true;
-                    break; //checking if length of array is greater than position 
-                }
-                else{
-                     result = false;
-                }
-                
-            }
-        } catch (IOException e) {
-            System.out.println("Error encountered: " + e.getMessage());
-            result = false;
-        }
-        return result;
-    }*/
 }
+
